@@ -1,5 +1,5 @@
 {
-    "name": "@milkdown/plugin-directive-fallback",
+    "name": "@ezone-devops/directive-fallback",
     "version": "6.2.0",
     "type": "module",
     "main": "./lib/index.es.js",
