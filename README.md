@@ -1,7 +1,7 @@
 # @milkdown/plugin-directive-fallback
 
 let's say if you make a plugin like this.
-
+```
 schema: () => ({
     // ...
     parseMarkdown: {
@@ -11,6 +11,10 @@ schema: () => ({
         },
     },
 }),
+```
+
+then 
+```
 import { Editor } from '@milkdown/core';
 import { commonmark } from '@milkdown/preset-commonmark';
 import { nord } from '@milkdown/theme-nord';
@@ -24,12 +28,15 @@ Editor.make()
         ctx.set(defaultValueCtx, defaultValue);
     })
     .create();
+```
+
 If you don't use plugin-directive-fallback.
 
 The editor crash when you run it with some other directive;
 
 It render all directive as text to avoid parse error when use remark-directive;
 
+```
 import { Editor } from '@milkdown/core';
 import { commonmark } from '@milkdown/preset-commonmark';
 import { nord } from '@milkdown/theme-nord';
@@ -44,6 +51,7 @@ Editor.make()
         ctx.set(defaultValueCtx, defaultValue);
     })
     .create();
+```
 Every thing is ok now.
 
 
