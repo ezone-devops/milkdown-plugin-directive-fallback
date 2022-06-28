@@ -1,7 +1,7 @@
 # @milkdown/plugin-directive-fallback
 
 let's say if you make a plugin like this.
-```
+```typescript
 schema: () => ({
     // ...
     parseMarkdown: {
@@ -14,7 +14,7 @@ schema: () => ({
 ```
 
 then 
-```
+```typescript
 import { Editor } from '@milkdown/core';
 import { commonmark } from '@milkdown/preset-commonmark';
 import { nord } from '@milkdown/theme-nord';
@@ -36,7 +36,7 @@ The editor crash when you run it with some other directive;
 
 It render all directive as text to avoid parse error when use remark-directive;
 
-```
+```typescript
 import { Editor } from '@milkdown/core';
 import { commonmark } from '@milkdown/preset-commonmark';
 import { nord } from '@milkdown/theme-nord';
