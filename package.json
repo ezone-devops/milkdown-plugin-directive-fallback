@@ -10,9 +10,7 @@
     "license": "MIT",
     "scripts": {
         "start": "vite build --watch",
-        "test": "vitest",
-        "tsc": "tsc --noEmit && echo",
-        "build": "tsc --emitDeclarationOnly && vite build"
+        "build": "vite build"
     },
     "files": [
         "lib",
