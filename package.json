@@ -1,16 +1,15 @@
 {
-    "name": "@ezone-devops/directive-fallback",
-    "version": "6.2.0",
+    "name": "@ezone-devops/milkdown-plugin-directive-fallback",
+    "version": "6.2.1",
     "type": "module",
     "main": "./lib/index.es.js",
     "types": "./lib/index.d.ts",
-    "repository":"https://github.com/ezone-devops/milkdown-plugin-directive-fallback",
-    "homepage":"https://github.com/ezone-devops/milkdown-plugin-directive-fallback/README.md",
+    "repository": "https://github.com/ezone-devops/milkdown-plugin-directive-fallback",
+    "homepage": "https://github.com/ezone-devops/milkdown-plugin-directive-fallback/README.md",
     "sideEffects": false,
     "license": "MIT",
     "scripts": {
-        "start": "vite build --watch",
-        "build": "vite build"
+        "build": "tsc --emitDeclarationOnly && vite build"
     },
     "files": [
         "lib",
@@ -20,11 +19,7 @@
         "milkdown",
         "milkdown plugin"
     ],
-    "devDependencies": {
-        "@milkdown/core": "^6.2.0",
-        "@milkdown/prose": "6.2.0",
-        "remark-directive": "^2.0.1"
-    },
+ 
     "peerDependencies": {
         "@milkdown/core": "^6.2.0",
         "@milkdown/prose": "^6.2.0",
@@ -32,11 +27,17 @@
         "rollup": "^0.45.2"
     },
     "dependencies": {
+        "@milkdown/core": "^6.2.0",
+        "@milkdown/prose": "6.2.0",
+        "remark-directive": "^2.0.1"
+    },
+    "devDependencies": {
         "@babel/core": "^7.0.0",
-        "rollup-plugin-auto-external": "^2.0.0",
-        "vite": "^2.9.13",
         "@milkdown/utils": "^6.2.0",
         "rollup": "^0.45.2",
-        "tslib": "^2.3.1"
+        "rollup-plugin-auto-external": "^2.0.0",
+        "typescript": "^4.7.4",
+        "tslib": "^2.3.1",
+        "vite": "^2.9.13"
     }
 }

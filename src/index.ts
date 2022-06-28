@@ -13,3 +13,10 @@ export const directiveFallback = AtomList.create([
     directiveLeafNode(),
     remarkDirective(),
 ]);
+
+export {
+    directiveContainerNode,
+    directiveTextNode,
+    directiveLeafNode,
+    remarkDirective,
+}

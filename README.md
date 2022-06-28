@@ -1,4 +1,6 @@
-# @milkdown/plugin-directive-fallback
+# @ezone-devops/milkdown-plugin-directive-fallback
+
+
 
 let's say if you make a plugin like this.
 ```typescript
@@ -18,7 +20,7 @@ then
 import { Editor } from '@milkdown/core';
 import { commonmark } from '@milkdown/preset-commonmark';
 import { nord } from '@milkdown/theme-nord';
-import { directiveWithFallback } from '@milkdown/plugin-directive-fallback';
+import { directiveWithFallback } from '@ezone-devops/milkdown-plugin-directive-fallback';
 const defaultValue = `# Hello milkdown :::abc{.class#id} content ::: `;
 Editor.make()
     .Editor.make()
@@ -40,7 +42,7 @@ It render all directive as text to avoid parse error when use remark-directive;
 import { Editor } from '@milkdown/core';
 import { commonmark } from '@milkdown/preset-commonmark';
 import { nord } from '@milkdown/theme-nord';
-import { directiveWithFallback } from '@milkdown/plugin-directive-fallback';
+import { directiveWithFallback } from '@ezone-devops/milkdown-plugin-directive-fallback';
 const defaultValue = `# Hello milkdown :::abc{.class#id} content ::: `;
 Editor.make()
     .Editor.make()
