@@ -23,8 +23,7 @@
     "peerDependencies": {
         "@milkdown/core": "^6.2.0",
         "@milkdown/prose": "^6.2.0",
-        "remark-directive": "^2.0.1",
-        "rollup": "^0.45.2"
+        "remark-directive": "^2.0.1"
     },
     "dependencies": {
         "@milkdown/core": "^6.2.0",
